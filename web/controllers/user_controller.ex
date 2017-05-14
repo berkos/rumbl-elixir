@@ -5,7 +5,7 @@ defmodule Rumbl.UserController do
 
 
   def index(conn, _params) do
-    users = Repo.all(Rumb.User)
+    users = Repo.all(Rumbl.User)
 
     render conn, "index.html", users: users
   end
